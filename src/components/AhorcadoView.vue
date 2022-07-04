@@ -1,21 +1,47 @@
+
 <template>
+<!-- CSS only -->
+
   <div class="home">
     <div class="cuadroMono">
       <div class="monito">
-        <h3 class="holi" ref="holi">{{holi}}</h3>
+        
       </div>
+      
     </div>
     <div class="letras">
 
     </div>
     <div class="escritura">
+      <b-form-textarea
+        id="textarea"
+        v-model="text"
+        placeholder="Enter something..."
+        rows="3"
+        max-rows="6"
+      ></b-form-textarea> 
+      <h3 class="holi" ref="holi">jiji {{holi}}</h3>
       <button class="ingresarLetras" @click="formatting">Ingresar</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary" @click="holi" type="button" id="button-addon1">Button</button>
+        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
     </div>
+    
   </div>
 </template>
 
 <script>
+
 export default {
+  data() { 
+    return{
+      text: "",
+      holi: ""
+
+    }
+  },
   name: 'AhorcadoView',
   props: {
     msg: String

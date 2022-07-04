@@ -6,6 +6,7 @@
 <script>
 import AhorcadoView from './components/AhorcadoView.vue'
 
+
 export default {
   name: 'App',
   components: {
