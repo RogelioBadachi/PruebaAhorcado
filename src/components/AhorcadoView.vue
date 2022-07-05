@@ -2,15 +2,15 @@
 <template>
 <!-- CSS only -->
 
-  <div class="home">
+  <div class="d-flex justify-content-center">
     <div class="cuadroMono">
       <div class="monito">
-        <img src="../assets/logo.png" class="img-fluid" alt="...">
+        <img src="../assets/ahorcado.png" class="img-fluid" alt="...">
       </div>
       
     </div>
     <div class="letras">
-
+      
     </div>
     <div class="escritura">
       <b-form-textarea
@@ -23,7 +23,7 @@
       <h3 class="holi" ref="holi">jiji {{holi}}</h3>
       <button class="ingresarLetras" @click="formatting">Ingresar</button>
       <button type="button" class="btn btn-primary">Primary</button>
-      <img src="../assets/ahorcado.png" alt="">
+      
       <div class="input-group mb-3">
         <button class="btn btn-outline-secondary" @click="hola" type="button" id="button-addon1">Button Hola</button>
         <input type="text" class="form-control" v-model="inputData" placeholder="Ingrese letra por letra" aria-label="Example text with button addon" aria-describedby="button-addon1">
