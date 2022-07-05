@@ -5,7 +5,7 @@
   <div class="home">
     <div class="cuadroMono">
       <div class="monito">
-        
+        <img src="../assets/logo.png" class="img-fluid" alt="...">
       </div>
       
     </div>
@@ -23,9 +23,10 @@
       <h3 class="holi" ref="holi">jiji {{holi}}</h3>
       <button class="ingresarLetras" @click="formatting">Ingresar</button>
       <button type="button" class="btn btn-primary">Primary</button>
+      <img src="../assets/ahorcado.png" alt="">
       <div class="input-group mb-3">
-      <button class="btn btn-outline-secondary" @click="holi" type="button" id="button-addon1">Button</button>
-        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        <button class="btn btn-outline-secondary" @click="hola" type="button" id="button-addon1">Button Hola</button>
+        <input type="text" class="form-control" v-model="inputData" placeholder="Ingrese letra por letra" aria-label="Example text with button addon" aria-describedby="button-addon1">
       </div>
     </div>
     
@@ -38,7 +39,9 @@ export default {
   data() { 
     return{
       text: "",
-      holi: ""
+      holi: "",
+      inputData: "",
+
 
     }
   },
@@ -50,6 +53,9 @@ export default {
   methods:{
     formatting: function(){
       this.holi = "holi";
+    },
+    hola: function(){
+      this.holi = this.inputData;
     }
   }
 }
@@ -77,4 +83,5 @@ a {
   width: 200px;
   border: solid 10px black;
 }
+
 </style>
