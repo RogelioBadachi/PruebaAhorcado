@@ -2,10 +2,13 @@
 <template>
 <!-- CSS only -->
 
-  <div class="d-flex justify-content-center">
+  <div class="container">
     <div class="cuadroMono">
       <div class="monito">
         <img src="../assets/ahorcado.png" class="img-fluid" alt="...">
+      </div>
+      <div class="letters">
+        {{letters}}
       </div>
       
     </div>
@@ -20,7 +23,7 @@
         rows="3"
         max-rows="6"
       ></b-form-textarea> 
-      <h3 class="holi" ref="holi">jiji {{holi}}</h3>
+      <h3 class="holi" ref="holi">{{holi}}</h3>
       <button class="ingresarLetras" @click="formatting">Ingresar</button>
       <button type="button" class="btn btn-primary">Primary</button>
       <div class="input-group mb-3">
@@ -78,9 +81,12 @@ a {
   color: #42b983;
 }
 .cuadroMono {
-  height: 300px;
-  width: 200px;
+  height: 20rem;
+  width: 15rem;
   border: solid 10px black;
+  position: relative;
+  top: 50%;
+  left: 40%;
 }
 
 </style>
