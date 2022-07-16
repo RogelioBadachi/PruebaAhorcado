@@ -24,8 +24,6 @@
         max-rows="6"
       ></b-form-textarea> 
       <h3 class="holi" ref="holi">{{holi}}</h3>
-      <button class="ingresarLetras" @click="formatting">Ingresar</button>
-      <button type="button" class="btn btn-primary">Primary</button>
       <div class="input-group mb-3">
         <button class="btn btn-outline-secondary" @click="hola" type="button" id="button-addon1">Button Hola</button>
         <input type="text" class="form-control" v-model="inputData" placeholder="Ingrese letra por letra" aria-label="Example text with button addon" aria-describedby="button-addon1">
