@@ -41,6 +41,9 @@ export default {
       text: "",
       holi: "",
       inputData: "",
+      palabras: ['ALURA', 'AHORCADO', 'HTML', 'ORACLE', 'JAVASCRIPT', 'LOGICA', 'PROGRAMACION', 'DESAFIO'],
+      
+
 
 
     }
