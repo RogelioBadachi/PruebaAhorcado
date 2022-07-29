@@ -41,10 +41,10 @@ export default {
       text: "",
       holi: "",
       inputData: "",
-      palabras: ['ALURA', 'AHORCADO', 'HTML', 'ORACLE', 'JAVASCRIPT', 'LOGICA', 'PROGRAMACION', 'DESAFIO'],
       
-
-
+      palabras: ['ALURA', 'AHORCADO', 'HTML', 'ORACLE', 'JAVASCRIPT', 'LOGICA', 'PROGRAMACION', 'DESAFIO'],
+      palabraSecreta: "",
+      palabra: "",
 
     }
   },
@@ -59,6 +59,8 @@ export default {
     },
     hola: function(){
       this.holi = this.inputData;
+      this.letters = this.inputData;
+      
     }
   }
 }
